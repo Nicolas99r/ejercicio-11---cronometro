@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+
+* {
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #202020;
+
+    background: rgb(127,121,232);
+    background: linear-gradient(145deg, #8180af, #9998d0);
+}
+
+.container {
+    height: fit-content;
+    width: 500px;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50px;
+    background: linear-gradient(145deg, #8180af, #9998d0);
+    box-shadow:  10px 10px 20px #7a79a5,
+                 -10px -10px 20px #a4a3df;
+}
+
+#tablero {
+    font-size: 5rem;
+    text-align: center;
+    margin: 0;
+    cursor: default;
+}
+
+button {
+    color: #090909;
+    padding: 0.7em 1.7em;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: linear-gradient(145deg, #8180af, #9998d0);
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 6px 6px 12px #8180af, -6px -6px 12px #9998d0;
+    margin: 1rem;
+}
+  
+button:active {
+    color: #666;
+    box-shadow: inset 4px 4px 12px #8180af, inset -4px -4px 12px #9998d0;
+}
+
+button:hover {
+    transform: scale(1.2);
+}
